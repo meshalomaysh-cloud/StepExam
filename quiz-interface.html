@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="ar" dir="rtl"> <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>الإختبار الشامل</title>
+    <link rel="stylesheet" href="fulltest.css" />
+     <link
+      rel="icon"
+      type="image/png"
+      href="favicon.png"
+      alt="The website icon, it is a circular image containing STEP English at the the top, a practice website at the bottom written in Arabic, and a middle orange image."
+    />
+  </head>
+  <body>
+    <div class="test-wrapper">
+      <div class="quiz-card">
+        
+        <div class="quiz-header">
+          <div class="timer-wrapper">
+            <span class="timer-icon">⏱️</span>
+            <span id="timer">80:00</span>
+          </div>
+          <span id="progress-text">جاري التحميل...</span>
+        </div>
+
+        <div class="progress-container">
+          <div id="progress-bar"></div>
+        </div>
+
+        <div class="content-area">
+          
+          <div id="reading-box" class="info-box" style="display: none">
+            <p id="passage-text"></p>
+          </div>
+
+          <div id="audio-wrapper" class="info-box" style="display: none">
+            <div class="audio-box">
+              <div class="audio-info">
+                <span class="icon">🎧</span>
+                <span>قسم الاستماع - Listening Section</span>
+              </div>
+              <audio id="quiz-audio" controlsList="nodownload"></audio>
+              <div class="audio-controls-custom">
+                <button id="play-btn" class="audio-btn" onclick="playAudio()">
+                  تشغيل المقطع الصوتي
+                </button>
+                <div id="play-status" class="status-badge">المحاولات المتبقية: 2</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="question-container">
+            <h2 id="question-text"></h2>
+            <div id="options-container" class="options-grid">
+              </div>
+          </div>
+
+        </div>
+
+        <div class="quiz-footer">
+          <button id="next-btn" class="nav-btn" onclick="handleNext()">التالي</button>
+          <button id="prev-btn" class="nav-btn" onclick="handlePrev()">السابق</button>
+        </div>
+
+      </div>
+    </div>
+    <script src="fulltest.js"></script>
+  </body>
+</html>

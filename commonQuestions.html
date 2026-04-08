@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>الأسئلة الشائعة</title>
+    <link rel="stylesheet" href="commonQuestions.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="favicon.png"
+    />
+  </head>
+  <body>
+    <style>
+      :root {
+        --primary-blue: #0056b3;
+        --light-blue: #f0f7ff;
+        --text-dark: #2d3748;
+        --border-color: #e2e8f0;
+        --accent-gold: #d69e2e;
+      }
+
+      .faq-hub {
+        direction: rtl; 
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        max-width: 850px;
+        margin: 40px auto;
+        border: 1px solid var(--border-color);
+        border-radius: 15px;
+        background: #ffffff;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+        overflow: hidden;
+      }
+
+      .faq-header {
+        background: linear-gradient(135deg, #1a365d 0%, #2b6cb0 100%);
+        color: white;
+        padding: 35px 20px;
+        text-align: center;
+        border-bottom: 4px solid var(--accent-gold);
+      }
+
+      .faq-header h1 {
+        margin: 0;
+        font-size: 26px;
+      }
+      .faq-header p {
+        margin: 10px 0 0;
+        opacity: 0.8;
+        font-weight: 300;
+      }
+
+      .faq-body {
+        padding: 20px;
+      }
+
+      .faq-category-title {
+        font-size: 18px;
+        color: #1a365d;
+        margin: 25px 10px 15px;
+        padding-bottom: 8px;
+        border-bottom: 2px solid var(--light-blue);
+        display: flex;
+        align-items: center;
+      }
+
+      .faq-category-title::before {
+        content: "";
+        width: 10px;
+        height: 10px;
+        background-color: var(--accent-gold);
+        margin-left: 10px;
+        border-radius: 50%;
+      }
+
+      .faq-item {
+        margin-bottom: 12px;
+        border: 1px solid var(--border-color);
+        border-radius: 10px;
+        transition: all 0.2s ease;
+      }
+
+      .faq-item:hover {
+        border-color: var(--primary-blue);
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      }
+
+      details summary {
+        list-style: none;
+        padding: 18px 20px;
+        font-weight: 600;
+        color: var(--text-dark);
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        outline: none;
+      }
+
+      details summary::-webkit-details-marker {
+        display: none;
+      }
+
+      details summary::after {
+        content: "←"; 
+        font-size: 18px;
+        color: var(--primary-blue);
+        transition: transform 0.3s ease;
+      }
+
+      details[open] summary::after {
+        transform: rotate(-90deg); 
+      }
+
+      .faq-answer {
+        padding: 0 25px 20px;
+        color: #4a5568;
+        line-height: 1.8;
+        font-size: 15px;
+        background-color: #fafbfc;
+        border-radius: 0 0 10px 10px;
+      }
+
+      .important-note {
+        background-color: #fffaf0;
+        border-right: 4px solid var(--accent-gold);
+        padding: 15px;
+        margin: 20px 0;
+        font-size: 14px;
+        color: #744210;
+      }
+
+      .faq-footer {
+        background-color: var(--light-blue);
+        padding: 20px;
+        text-align: center;
+        font-size: 14px;
+        color: #2c5282;
+      }
+    </style>
+
+    <div class="faq-hub">
+      <div class="faq-header">
+        <h1> معلومات عن الاختبار والأسئلة الشائعة</h1>
+        <p>أهم ما تحتاج معرفته قبل دخول قاعة الاختبار</p>
+      </div>
+
+      <div class="faq-body">
+        <div class="faq-category-title">معلومات عامة</div>
+
+        <div class="faq-item">
+          <details>
+            <summary>كم تبلغ المدة الزمنية الإجمالية للاختبار؟</summary>
+            <div class="faq-answer">
+              تستغرق مدة الاختبار الإجمالية حوالي
+              <b>ساعتين ونصف (150 دقيقة)</b>. تشمل هذه المدة أقسام القراءة،
+              الاستماع، وقواعد اللغة. لا توجد فترات راحة مجدولة أثناء الاختبار.
+            </div>
+          </details>
+        </div>
+
+        <div class="faq-item">
+          <details>
+            <summary>هل الاختبار ورقي أم محوسب؟</summary>
+            <div class="faq-answer">
+              الاختبار يتم بشكل <b>محوسب بالكامل (CBT)</b> في مراكز الاختبار
+              المعتمدة. لن يتم استخدام الورقة والقلم إلا في مسودات الملاحظات
+              التي يوفرها المركز.
+            </div>
+          </details>
+        </div>
+
+        <div class="faq-category-title">السياسات والقوانين</div>
+
+        <div class="faq-item">
+          <details>
+            <summary>ما هي المستندات المطلوبة لدخول قاعة الاختبار؟</summary>
+            <div class="faq-answer">
+              يجب إحضار <b>أصل الهوية الوطنية أو جواز السفر الساري</b>. يُمنع
+              منعاً باتاً دخول الاختبار ببطاقة منتهية الصلاحية أو صورة ضوئية
+              للهوية.
+            </div>
+          </details>
+        </div>
+
+        <div class="important-note">
+          <b>ملاحظة هامة:</b> يجب الحضور إلى مقر الاختبار قبل الموعد المحدد بـ
+          15 دقيقة على الأقل لإنهاء إجراءات التحقق من الهوية.
+        </div>
+
+        <div class="faq-item">
+          <details>
+            <summary>هل يمكنني العودة للسؤال السابق بعد تجاوزه؟</summary>
+            <div class="faq-answer">
+              يمكنك العودة للأسئلة ومراجعتها <b>داخل القسم نفسه فقط</b>. بمجرد
+              تأكيد إنهاء القسم والانتقال للقسم التالي (مثل الانتقال من الاستماع
+              إلى القراءة)، لن تتمكن من العودة للأسئلة السابقة.
+            </div>
+          </details>
+        </div>
+
+        <div class="faq-category-title">النتائج والدرجات</div>
+
+        <div class="faq-item">
+          <details>
+            <summary>متى تظهر نتائج الاختبار عادةً؟</summary>
+            <div class="faq-answer">
+              تظهر النتائج عادةً خلال <b>3 إلى 5 أيام عمل</b> من تاريخ أداء
+              الاختبار، وتصلك رسالة نصية (SMS) فور صدورها عبر النظام الرسمي.
+            </div>
+          </details>
+        </div>
+      </div>
+
+    </div>
+  </body>
+</html>
